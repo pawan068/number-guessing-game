@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <div id="inst" class="instruction">
+            <p>INSTRUCTIONS..</p>
+            <li id="instruct" type="none">
+                <ol>The computer picks a random number within a set range (e.g., 1–100).</ol>
+                <ol>You try to guess the number.</ol>
+                <ol>You have a limited number of guesses (e.g., 5 or 10).</ol>
+            </li>
+            <button onclick="hide()">Got It</button>
+        </div> -->
+      <center><div class="random" id="random"></div> </center>   
+              <p id="msg">computer picks a random number</p>
+        <input id="input" type="text" pattern="0-9" disabled placeholder="Guess The Number (0-100)"  >
+
+        <div class="buttons" id="buttons">
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="erase()">⌫</button>
+            <button onclick="cheak()" id="cheak">Cheak</button>
+            <button style="visibility: hidden;"></button>
+            <button onclick="reset()" id="reset">⟲</button>
+            <button style="visibility: hidden;">⟲</button>
+            
+        </div>
+        <p id="attempt">Attempt Remaining :8 </p>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
