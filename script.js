@@ -18,7 +18,7 @@ function erase(){
 }
 
 let value = document.getElementById("random");
-value.innerText=Math.floor(Math.random()*100)
+value.innerText=Math.ceil(Math.random()*100)
 
 
 function cheak(){
@@ -42,7 +42,7 @@ let target = Number(value.innerText);
 
 if (guess === target) {
     msg.innerText = "Correct Answer!";
-    value.style.color = "white"; 
+    value.style.color = "#00ff00"; 
 
     document.querySelectorAll("button").forEach(btn => {
         if (btn.id !== "reset") {
@@ -56,21 +56,21 @@ else if (guess < 0 || guess > 100) {
     input.value="";
 }
 else if (guess < target) {
-    msg.innerText = "Smaller than random value";
+    msg.innerText = "Try Greater Number";
     input.value="";
 }
 else if (guess > target) {
-    msg.innerText = "Greater than random value";
+    msg.innerText = "Try Lower Number";
     input.value="";
 }
 
-        
+
     }
 
-   
+
 
 function reset(){
     location.reload();
 }
 
-                
+");
